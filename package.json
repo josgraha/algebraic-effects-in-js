@@ -1,0 +1,39 @@
+{
+  "name": "algebraic-effects-in-js",
+  "version": "1.0.0",
+  "description": "Learning Algebraic Effects in JS",
+  "main": "src/index.js",
+  "repository": "git@github.com:josgraha/algebraic-effects-in-js.git",
+  "author": "Joe Graham <josgraha@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "format": "prettier --single-quote --write 'src/**/*.js'",
+    "lint": "eslint src/**/*.js",
+    "start": "babel-node src/index.js",
+    "test": "jest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "babel-eslint": "^10.0.3",
+    "babel-preset-react-app": "^9.1.0",
+    "eslint": "6.x",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-import": "2.x",
+    "eslint-plugin-jsx-a11y": "6.x",
+    "eslint-plugin-prettier": "^3.1.2",
+    "jest": "^24.9.0",
+    "lint-staged": "^9.5.0",
+    "prettier": "^1.19.1"
+  },
+  "lint-staged": {
+    "*.{js,md,css,html}": [
+      "prettier --single-quote --write",
+      "git add"
+    ],
+    "yarn.lock": [
+      "git rm --cached"
+    ]
+  }
+}
